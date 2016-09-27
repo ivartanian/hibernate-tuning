@@ -64,6 +64,8 @@ public class DatabaseConfig {
         additionalProperties.put("hibernate.use_sql_comments", env.getProperty("hibernate.use_sql_comments"));
         additionalProperties.put("hibernate.generate_statistics", env.getProperty("hibernate.generate_statistics"));
         additionalProperties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        additionalProperties.put("hibernate.jdbc.batch_size", 50);
+        additionalProperties.put("hibernate.jdbc.fetch_size", 50);
         entityManagerFactory.setJpaProperties(additionalProperties);
 
         return entityManagerFactory;

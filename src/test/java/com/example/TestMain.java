@@ -3,6 +3,7 @@ package com.example;
 import com.example.domain.User;
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
+import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
